@@ -1,2 +1,3 @@
 # seadoo_afr_display
-Display AFR on Dash of SeaDoo PWC
+The goal of this project is to display the AFR on the display of SeaDoo PWCs as a depth reading. Currently this is written to read the AFR value via can from a Spartan 3 wide band controller and output the message as a water depth on the dash. Additionally it reads RPM signal from the PWC can bus and transmits it as rpm in Megasquirt format for the Spartan 3 to use as a trigger for heating. It also transmits the status bytes if they are anything other than a valid AFR value. The hardware being used is an Autosport Labs ESP32-CAN-X2 Dual CAN bus automotive grade development board. The code is a modified version of ASL's ping pong example. It is currently functioning on a 2017 RXP 300 but should work on other SeaDoo PWCs with the same communication protocols.
+
